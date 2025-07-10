@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISOB - Islamic Sultanate of Bangladesh</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    nav {
+      background-color: #000;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .hamburger {
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+    .menu {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 200px;
+      background: #222;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 0 0 10px 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .menu.show {
+      transform: translateX(0);
+    }
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 10px;
+      border-bottom: 1px solid #333;
+    }
+    .menu a:last-child {
+      border-bottom: none;
+    }
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 120px 20px 60px;
+    }
+    header img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #32cd32;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #32cd32;
+      margin-bottom: 15px;
+    }
+    .leadership {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .leader {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+    }
+    .join-btn {
+      display: inline-block;
+      background: #32cd32;
+      color: #000;
+      padding: 10px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <div id="menu" class="menu">
+   <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="socials.html" >Socials</a>
+    <a href="publications.html">Publications</a>
+    <a href="about.html">About Us</a>
+      </div>
+</nav>
+
+<header>
+  <img src="https://i.postimg.cc/xqSrxjYv/ISOB-Flag.png" alt="ISOB Flag" style="width: 400px; height: auto;">
+  <h1>Islamic Sultanate of Bangladesh</h1>
+  <p>Reviving history. Leading the future.</p>
+  <a href="https://discord.gg/hqn9acs2aA" class="join-btn">Join the Sultanate</a>
+  <p style="max-width: 600px; margin: 20px auto 0; font-size: 1em;">
+    The Islamic Sultanate of Bangladesh is not just a digital community—it's a movement of honor, faith, and power. Join our nation, help build its future, and become part of history.
+  </p>
+</header>
+
+<footer>
+  <p>&copy; 2025 Islamic Sultanate of Bangladesh. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>

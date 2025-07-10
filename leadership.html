@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ISOB - Leadership</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    nav {
+      background-color: #000;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    }
+    .hamburger {
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+    .menu {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 200px;
+      background: #222;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 0 0 10px 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
+    }
+    .menu.show {
+      transform: translateX(0);
+    }
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      border-bottom: 1px solid #333;
+      transition: background 0.3s;
+    }
+    .menu a:hover {
+      background-color: #333;
+    }
+    .menu a:last-child {
+      border-bottom: none;
+    }
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 120px 20px 50px;
+    }
+    header h1 {
+      font-size: 2.8em;
+      color: #32cd32;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+    header p {
+      color: #ccc;
+      font-size: 1.1em;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #32cd32;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 2em;
+    }
+    .leader-card, .team-card {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(50, 205, 50, 0.2);
+      text-align: center;
+    }
+    .leader-card h3, .team-card h3 {
+      margin-top: 0;
+      color: #fff;
+    }
+    .leader-card p, .team-card p {
+      margin: 5px 0;
+      color: #ccc;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid #32cd32;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <div id="menu" class="menu">
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="socials.html" >Socials</a>
+    <a href="publications.html">Publications</a>
+    <a href="about.html">About Us</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Our Leadership</h1>
+  <p>Honoring the visionaries who shaped the Islamic Sultanate of Bangladesh.</p>
+</header>
+
+<section class="section">
+  <h2>Our Sultans</h2>
+  <div class="leader-card"><h3>Sultan I: Zaman I</h3><p><strong>Ruling Time:</strong> 23 April 2022-June 16 2023</p><p><strong>Achievements:</strong> Built This Server and reached 100 members</p></div>
+  <div class="leader-card"><h3>Sultan II: RTA I</h3><p><strong>Ruling Time:</strong> June 16 2023-August 20 2023</p><p><strong>Achievements:</strong> Reformed the server and reached 300+ members</p></div>
+  <div class="leader-card"><h3>Sultan III: Falaq I</h3><p><strong>Ruling Time:</strong> August 20 2023- February 16 2024</p><p><strong>Achievements:</strong> fixed parliament</p></div>
+  <div class="leader-card"><h3>Sultan IV: RTA I</h3><p><strong>Ruling Time:</strong> February 16 2024- January 07 2025</p><p><strong>Achievements:</strong> reforming server and reached 550+ members</p></div>
+  <div class="leader-card"><h3>Sultan V: WoxoPamerxd</h3><p><strong>Ruling Time:</strong> Jannuary 07 2025-February 03 2025</p><p><strong>Achievements:</strong> make the server alive</p></div>
+  <div class="leader-card"><h3>Sultan V: Rafsan I</h3><p><strong>Ruling Time:</strong> February 03 2025-present</p><p><strong>Achievements:</strong> reforming server and reached 700+ members</p></div>
+</section>
+
+<section class="section">
+  <h2>Our Grand Vizirs</h2>
+  <div class="leader-card"><h3>Grand Vizir I: Lost Character</h3><p><strong>Ruling Time:</strong> 24 July 2022-August 17 2022</p><p><strong>Achievements:</strong> invited 5-10 people, made the server active and fun</p></div>
+  <div class="leader-card"><h3>Grand Vizir II: Tautical Gamer</h3><p><strong>Ruling Time:</strong> August 17 2022-October 20 2023</p><p><strong>Achievements:</strong> </p>helped in reforming server</div>
+  <div class="leader-card"><h3>Grand Vizir III: Dr.Absurd</h3><p><strong>Ruling Time:</strong> October 20 2023-January 20 2025</p><p><strong>Achievements:</strong> add improvements,helped reforming</p></div>
+  <div class="leader-card"><h3>Grand Vizir IV: RTA I</h3><p><strong>Ruling Time:</strong> January 20 2025-present</p><p><strong>Achievements:</strong> helped in reforming,advised sultan</p></div>
+</section>
+
+<section class="section">
+  <h2>Our Team</h2>
+  <div class="team-grid">
+    <div class="team-card">
+     <img src="https://i.postimg.cc/75MWpNF3/Picsart-25-05-12-14-22-15-594.jpg" alt="R4FS4N">
+      <h3>Sultan</h3>
+      <p>R4FS4N</p>
+    </div>
+    <div class="team-card">
+      <img src="https://i.postimg.cc/N9JnMfDp/IMG-20240512-131122-079.jpg" alt="RTA">
+      <h3>Wazir E Azam</h3>
+      <p>RTA</p>
+    </div>
+    <div class="team-card">
+  <img
+src= "https://i.postimg.cc/hhwp1NsC/Screenshot-20240513-210132.jpg" alt="pamer" style="width:100px; height: auto;">
+      <h3>Wazir E Difa</h3>
+      <p>Woxopamerxd</p>
+    </div>
+    <div class="team-card">
+      <img src="https://i.postimg.cc/CnMbgkVx/your-image.png" alt="Zuhr" style="width: 100px; height: auto;">
+      <h3>Shura</h3>
+      <p>Sizuhr</p>
+    </div>
+    <div class="team-card">
+      <img src=https://i.postimg.cc/D8XLdmkx/your-image.png" alt="Zuhr" style="width: 100px; height: auto;">
+      <h3>Shura</h3>
+      <p>Rexim</p>
+    </div>
+    <div class="team-card">
+      <img src="https://i.postimg.cc/5jV7Dcp9/your-image.png" alt="Zuhr" style="width: 100px; height: auto;">
+      <h3>Shura</h3>
+      <p>MD NH Ali Faiz Khan</p>
+    </div>
+    <div class="team-card">
+      <img src="https://i.postimg.cc/CnyDWVbG/your-image.png" alt="Zuhr" style="width: 100px; height: auto;">
+      <h3>Shura</h3>
+      <p>Nothing BR</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Islamic Sultanate of Bangladesh. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>

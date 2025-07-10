@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISOB - History</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    nav {
+      background-color: #000;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    }
+    .hamburger {
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+    .menu {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 200px;
+      background: #222;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 0 0 10px 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
+    }
+    .menu.show {
+      transform: translateX(0);
+    }
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      border-bottom: 1px solid #333;
+      transition: background 0.3s;
+    }
+    .menu a:hover {
+      background-color: #333;
+    }
+    .menu a:last-child {
+      border-bottom: none;
+    }
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 120px 20px 50px;
+    }
+    header h1 {
+      font-size: 2.8em;
+      color: #32cd32;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+    header p {
+      color: #ccc;
+      font-size: 1.1em;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(50, 205, 50, 0.2);
+    }
+    .section h2 {
+      color: #32cd32;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.8em;
+    }
+    .section p {
+      line-height: 1.8;
+      text-align: justify;
+      font-size: 1.05em;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <div id="menu" class="menu">
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="socials.html" >Socials</a>
+    <a href="publications.html">Publications</a>
+    <a href="about.html">About Us</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Our History</h1>
+  <p>A legacy rooted in faith, honor, and leadership.</p>
+</header>
+
+<section class="section">
+  <h2>Our Founding Story</h2>
+  <p>Islamic Sultanate of Bangladesh (ISOB) was created by Zaman I on April 23, 2022. It wasn’t called ISOB at the beginning — it was known as the Islamic Caliphate of Bangladesh. The 2nd Caliph, RTA I, reached 300 members during his rule and reformed the server. It was RTA I who renamed the nation to the Islamic Sultanate of Bangladesh.</p>
+  
+  <p>Afterward came Falaq I, who helped shape the parliament system but didn’t enact many changes. He earned the nickname “The Crazy Prince.” Following him, RTA I returned to power and led ISOB to 500 members. Eventually, Zaman I left Discord and handed ownership to RTA I.</p>
+
+  <p>RTA I continued to serve ISOB honorably but later chose to retire. As the server faced inactivity, Woxopamerxd stepped in and ruled ISOB for several months. Under his leadership, the server grew to 550 members. Recognizing the need for democracy, Woxopamerxd organized an election.</p>
+
+  <p>In that election, Rafsan I emerged victorious and began his reign. Under his leadership, ISOB surpassed 700 members. However, during his rule, Rafsan I was briefly punished by the owner, RTA I, due to concerns of rising dictatorship. An interim government was established, headed by Falaq I.</p>
+
+  <p>After one week, Rafsan I was reinstated and officially ended the interim government. Today, ISOB continues under the leadership of Rafsan I, with peace and growth guiding its future.</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Islamic Sultanate of Bangladesh. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISOB - Publications</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+    }
+    nav {
+      background-color: #000;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .hamburger {
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+    .menu {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 200px;
+      background: #222;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 0 0 10px 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .menu.show {
+      transform: translateX(0);
+    }
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 10px;
+      border-bottom: 1px solid #333;
+    }
+    .menu a:last-child {
+      border-bottom: none;
+    }
+
+    .container {
+      background-color: #1a1a1a;
+      margin: 120px auto 40px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #32cd32;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .toggle-btn {
+      font-size: 18px;
+      padding: 10px;
+      background-color: #222;
+      color: #32cd32;
+      border: 2px solid #32cd32;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-bottom: 10px;
+    }
+
+    .toggle-btn:hover {
+      background-color: #333;
+    }
+
+    .content {
+      display: none;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s ease-out;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    .content p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <div id="menu" class="menu">
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="socials.html" >Socials</a>
+    <a href="publications.html">Publications</a>
+    <a href="about.html">About Us</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Our Publications</h2>
+<button class="toggle-btn" onclick="toggleSlide('content1')">Philosophy 🔽</button>
+  <div id="content1" class="content">
+    <p><strong>The Ideology of ISOB</strong> — A core philosophical document explaining the values of state, faith, and order.</p>
+    <p><strong>Islam & Sovereignty</strong> — Explores the intersection between Islamic principles and political leadership.</p>
+  </div>
+
+  <button class="toggle-btn" onclick="toggleSlide('content2')">Aqeedah 🔽</button>
+  <div id="content2" class="content">
+  <p><strong>Sharh al Aqeedah at-Tahawiyyah</strong> by Imam Ibn Abi al-'Izz (d. 792 AH)</p>
+  <ul>
+    <li><a href="https://drive.google.com/file/d/1ul6F-QqBj28XHW1MulOvvlYLqlyEr4Fa/view" target="_blank">Read Version 1</a></li>
+    <li><a href="https://drive.google.com/file/d/1zPlbfZ1uBizqmumwJcWIRpx7hMUL7efP/view" target="_blank">Read Version 2</a></li>
+    <li><a href="https://drive.google.com/file/d/1o1GHgxsUVbqf48sO7kqgQADxjTK90yNi/view" target="_blank">Read Version 3</a></li>
+    <li><a href="https://drive.google.com/file/d/1ud0QZNCtlCX7LRaX8zLOebjV0MQhSQYb/view" target="_blank">Read Version 4</a></li>
+  </ul>
+</div>
+
+<button class="toggle-btn" onclick="toggleSlide('content3')">Seerah Books 🔽</button>
+<div id="content3" class="content">
+  <p>This section contains books regarding the life of Prophet Muhammad ﷺ.</p>
+  <ul>
+    <li><strong>The Life of The Prophet ﷺ (Vol 1)</strong> by Ibn Kathir رحمه الله تعالى — 
+      <a href="https://drive.google.com/file/d/1IAqUYmKVPVx-9SyqxAtcVg3h1DtkfS8S/view" target="_blank">Read</a></li>
+
+    <li><strong>The Life of The Prophet ﷺ (Vol 2)</strong> — 
+      <a href="https://drive.google.com/file/d/1IAiQkS7oDtS1Bxscx2nZZmcgsr359_MB/view" target="_blank">Read</a></li>
+
+    <li><strong>The Life of The Prophet ﷺ (Vol 3)</strong> — 
+      <a href="https://drive.google.com/file/d/1I-k8QBw-2VR5tgxAHaBtPKjg3A1K4uMC/view" target="_blank">Read</a></li>
+
+    <li><strong>The Life of The Prophet ﷺ (Vol 4)</strong> — 
+      <a href="https://drive.google.com/file/d/1IEhn-X8I0xe9rnBnt3LU8eXM8GrMIjEQ/view" target="_blank">Read</a></li>
+
+    <li><strong>The Sealed Nectar</strong> by Safiur Rahman رحمه الله تعالى — 
+      <a href="https://drive.google.com/file/d/1H6q28M8-SS4SJMuLVmi18pZsqP3FAN39/view" target="_blank">Read</a></li>
+
+    <li><strong>The Sublime Beauty of The Prophet ﷺ</strong> by At-Tirmidhi رحمه الله تعالى — 
+      <a href="https://drive.google.com/file/d/1mTxdToelqfODEUcVg0H5GQhC8dYFVA6R/view" target="_blank">Read</a></li>
+
+    <li><strong>Battle of Prophet</strong> by Ibn Kathir رحمه الله تعالى — 
+      <a href="https://drive.google.com/file/d/1V1-Xkv7LtQW2WehZSowgzdnr7vQGo5UD/view" target="_blank">Read</a></li>
+  </ul>
+</div>
+
+<button class="toggle-btn" onclick="toggleSlide('content4')">Hadith Collection 🔽</button>
+<div id="content4" class="content">
+  <h3>Sahih Al-Bukhari</h3>
+  <ul>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20al-Bukhari%20Vol.%201%20-%201-875.pdf" target="_blank">Volume 1</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20al-Bukhari%20Vol.%202%20-%20876-1772.pdf" target="_blank">Volume 2</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20al-Bukhari%20Vol.%203%20-%201773-2737.pdf" target="_blank">Volume 3</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20al-Bukhari%20Vol.%204%20-%202738-3648.pdf" target="_blank">Volume 4</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20al-Bukhari%20Vol.%205%20-%203649-4473.pdf" target="_blank">Volume 5</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20al-Bukhari%20Vol.%206%20-%204474-5062.pdf" target="_blank">Volume 6</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20al-Bukhari%20Vol.%207%20-%205063-5969.pdf" target="_blank">Volume 7</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20al-Bukhari%20Vol.%208%20-%205970-6860.pdf" target="_blank">Volume 8</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20al-Bukhari%20Vol.%209%20-%206861-7563.pdf" target="_blank">Volume 9</a></li>
+  </ul>
+
+  <h3>Sahih Muslim</h3>
+  <ul>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20Muslim%20Vol.%201%20-%201-1160.pdf" target="_blank">Volume 1</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20Muslim%20Vol.%202%20-%201161-2262.pdf" target="_blank">Volume 2</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20Muslim%20Vol.%203%20-%202263-3397.pdf" target="_blank">Volume 3</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20Muslim%20Vol.%204%20-%203398-4518.pdf" target="_blank">Volume 4</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20Muslim%20Vol.%205%20-%204519-5645.pdf" target="_blank">Volume 5</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20Muslim%20Vol.%206%20-%205646-6722.pdf" target="_blank">Volume 6</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Sahih%20Muslim%20Vol.%207%20-%206723-7563.pdf" target="_blank">Volume 7</a></li>
+  </ul>
+
+  <h3>Jami' At-Tirmidhi</h3>
+  <ul>
+    <li><a href="https://kalamullah.com/Books/Hadith/Jami%20at-Tirmidhi%20Vol.%201%20-%201-543.pdf" target="_blank">Volume 1</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Jami%20at-Tirmidhi%20Vol.%202%20-%20544-1204.pdf" target="_blank">Volume 2</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Jami%20at-Tirmidhi%20Vol.%203%20-%201205-1896.pdf" target="_blank">Volume 3</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Jami%20at-Tirmidhi%20Vol.%204%20-%201897-2605.pdf" target="_blank">Volume 4</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Jami%20at-Tirmidhi%20Vol.%205%20-%202606-3290.pdf" target="_blank">Volume 5</a></li>
+    <li><a href="https://kalamullah.com/Books/Hadith/Jami%20at-Tirmidhi%20Vol.%206%20-%203291-3956.pdf" target="_blank">Volume 6</a></li>
+  </ul>
+
+  <h3>Sunan Abu Dawood</h3>
+  <ul>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20Abu%20Dawud%20Vol.%201%20-%201-1160.pdf" target="_blank">Volume 1</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20Abu%20Dawud%20Vol.%202%20-%201161-2174.pdf" target="_blank">Volume 2</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20Abu%20Dawud%20Vol.%203%20-%202175-3241.pdf" target="_blank">Volume 3</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20Abu%20Dawud%20Vol.%204%20-%203242-4350.pdf" target="_blank">Volume 4</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20Abu%20Dawud%20Vol.%205%20-%204351-5274.pdf" target="_blank">Volume 5</a></li>
+  </ul>
+
+  <h3>Sunan an-Nasa'i</h3>
+  <ul>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20an-Nasai%20Vol.%201%20-%201-876.pdf" target="_blank">Volume 1</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20an-Nasai%20Vol.%202%20-%20877-1818.pdf" target="_blank">Volume 2</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20an-Nasai%20Vol.%203%20-%201819-3086.pdf" target="_blank">Volume 3</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20an-Nasai%20Vol.%204%20-%203087-3970.pdf" target="_blank">Volume 4</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20an-Nasai%20Vol.%205%20-%203971-4987.pdf" target="_blank">Volume 5</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20an-Nasai%20Vol.%206%20-%204988-5761.pdf" target="_blank">Volume 6</a></li>
+  </ul>
+
+  <h3>Sunan Ibn Majah</h3>
+  <ul>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20Ibn%20Majah%20Vol.%201%20-%201-802.pdf" target="_blank">Volume 1</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20Ibn%20Majah%20Vol.%202%20-%20803-1782.pdf" target="_blank">Volume 2</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20Ibn%20Majah%20Vol.%203%20-%201783-2718.pdf" target="_blank">Volume 3</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20Ibn%20Majah%20Vol.%204%20-%202719-3656.pdf" target="_blank">Volume 4</a></li>
+    <li><a href="https://www.kalamullah.com/Books/Hadith/Sunan%20Ibn%20Majah%20Vol.%205%20-%203657-4341.pdf" target="_blank">Volume 5</a></li>
+  </ul>
+</div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Islamic Sultanate of Bangladesh. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+  }
+
+  function toggleSlide(id) {
+    const content = document.getElementById(id);
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.display = "block";
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  }
+</script>
+
+</body>
+</html>
